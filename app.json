@@ -1,0 +1,54 @@
+{
+    "expo": {
+        "name": "forA",
+        "slug": "forA",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "src/public/assets/forA-icon.png",
+        "userInterfaceStyle": "light",
+        "plugins": [
+            "@react-native-firebase/app",
+            [
+                "expo-build-properties",
+                {
+                    "ios": {
+                        "useFrameworks": "static"
+                    }
+                }
+            ],
+            [
+                "expo-splash-screen",
+                {
+                    "image": "src/public/assets/splash-n-onboard/splash.png",
+                    "resizeMode": "contain",
+                    "backgroundColor": "#52A55D"
+                }
+            ]
+        ],
+        "splash": {
+            "image": "src/public/assets/splash-n-onboard/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#52A55D"
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.fora.appfora",
+            "googleServicesFile": "./GoogleService-Info.plist",
+            "config": {
+                "googleMapsApiKey": "AIzaSyDl_Kn0cLi4nL54Pj6Eed-1nejU99Sbw0Q"
+            }
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "src/public/assets/adaptive-icon.png",
+                "backgroundColor": "#ffffff"
+            },
+            "permissions": ["ACCESS_FINE_LOCATION"],
+            "package": "ios.forA"
+        },
+        "web": {
+            "favicon": "src/public/assets/favicon.png"
+        }
+    }
+}
